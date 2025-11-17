@@ -1,0 +1,33 @@
+.c-button{
+    display: inline-flex;
+    padding: 0.5rem 1.125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    background-color: $color-dark;
+    color: $color-light;
+    font-size: 1.125rem;
+    font-weight: 400;
+    width: fit-content;
+    text-decoration: none;
+    border: .0938rem solid $color-dark;
+    transition: transform $transition-normal, box-shadow $transition-normal;
+
+    &:hover{
+        transform: translateY(-2px);
+        box-shadow: 4px 4px 2px rgba($color-dark,0.25);
+    }
+
+    &--secondary{
+        color: $color-dark;
+        background-color: $color-light;
+        border: none;
+        font-size: 1rem;
+        padding: 0;
+
+        &:hover{
+            box-shadow: none;
+        }
+    }
+}

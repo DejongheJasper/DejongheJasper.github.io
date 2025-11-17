@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Jasper Dejonghe</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+
+  <nav class="c-nav">
+    <div class="container">
+      <div class="row">
+        <div class="c-nav__wrapper js-nav">
+          <div class="c-nav__logo">
+            <a href="#" class="c-nav__link-logo js-logo">Jasper Dejonghe</a>
+          </div>
+
+          <!-- Desktop -->
+          <ul class="c-nav__list">
+            <li class="c-nav__item"><a href="#about" class="c-nav__link">About</a></li>
+            <li class="c-nav__item"><a href="#projects" class="c-nav__link">Projects</a></li>
+            <li class="c-nav__item"><a href="#skills" class="c-nav__link">Skills</a></li>
+            <li class="c-nav__item"><a href="#contact" class="c-nav__link">Contact</a></li>
+          </ul>
+
+          <!-- Mobile -->
+          <div class="c-nav__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="c-nav__mobile-menu">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="c-nav__backdrop"></div>
+  </nav>
+
+  <section class="c-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+          <div class="c-header__content">
+            <p>Hi, I'm Jasper Dejonghe</p>
+            <h1 class="c-header__title">A Front-end <br> Web developer</h1>
+            <p>Specializing in building clean, responsive websites using modern&nbsp;technologies.</p>
+            <a href="#projects" class="c-button">See my work</a>
+          </div>
+        </div>
+
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="c-header__diamond">
+            <a href="#about">
+              <div class="c-header__item"><i class="bi bi-person-fill"></i><span>About me</span></div>
+            </a>
+            <a href="#projects">
+              <div class="c-header__item"><i class="bi bi-file-earmark-code-fill"></i><span>Projects</span></div>
+            </a>
+            <a href="#skills">
+              <div class="c-header__item"><i class="bi bi-tools"></i><span>Skills</span></div>
+            </a>
+            <a href="#contact">
+              <div class="c-header__item"><i class="bi bi-envelope-fill"></i><span>Contact</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-about" id="about">
+    <div class="container">
+      <h2 class="c-about__title">About Me</h2>
+      <div class="row px-5">
+        <div class="col-xl-5 col-lg-5 col-12 px-1">
+          <div class="c-about__img-wrapper">
+            <img class="c-about__img-placeholder" src="./img/about-me.png" alt="Photo of me">
+          </div>
+        </div>
+
+        <div class="col-xl-7 col-lg-6 col-12 offset-xl-0 offset-lg-1">
+          <div class="c-about__content">
+            <h3>Hey there!</h3>
+            <div class="c-about__text">
+              <p>I'm a recent graduate of the <strong>Web Development & Design</strong> program at Howest, where I learned to bring digital ideas to life—from initial concept and user-focused design to front-end development.</p>
+              <p>I enjoy the challenge of turning well-crafted designs into clean, <strong>responsive code</strong>. Whether it's building from scratch or refining an existing product, I love the process of translating design into functional, elegant web experiences.</p>
+            </div>
+            <a class="c-button" href="/cv.pdf" download>Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-projects" id="projects">
+    <div class="container">
+      <h2 class="c-projects__title">Projects</h2>
+      <div class="row g-0">
+        <div class="c-projects__grid">
+          <div class="c-projects__item">
+            <div class="c-projects__item-wrapper">
+              <img src="./img/thumbnails/internship_small" srcset="./img/thumbnails/internship_small.png 1x,
+    ./img/thumbnails/internship_large.png 2x" alt="Picture of me made by ConXioN" class="c-projects__thumbnail">
+              <a href="internship.html" class="c-projects__overlay">
+                <h3 class="c-projects__overlay-title">Internship ConXioN</h3>
+                <p class="c-projects__overlay-tags">Development - Design - Marketing</p>
+              </a>
+            </div>
+          </div>
+          <div class="c-projects__item">
+            <div class="c-projects__item-wrapper">
+              <img src="./img/thumbnails/bikestore_small.png" srcset="./img/thumbnails/bikestore_small.png 1x,
+    ./img/thumbnails/bikestore_large.png 2x" alt="Image of project Bikestore" class="c-projects__thumbnail">
+              <a href="bikestore.html" class="c-projects__overlay">
+                <h3 class="c-projects__overlay-title">Bikestore</h3>
+                <p class="c-projects__overlay-tags">Development - Design - Craft CMS</p>
+              </a>
+            </div>
+          </div>
+          <div class="c-projects__item">
+            <div class="c-projects__item-wrapper">
+              <img src="./img/thumbnails/canvix_small.png" srcset="./img/thumbnails/canvix_small.png 1x,
+    ./img/thumbnails/canvix_large.png 2x" alt="Image of project Canvix" class="c-projects__thumbnail">
+              <a href="canvix.html" class="c-projects__overlay">
+                <h3 class="c-projects__overlay-title">Canvix</h3>
+                <p class="c-projects__overlay-tags">Development - Craft CMS</p>
+              </a>
+            </div>
+          </div>
+          <div class="c-projects__item">
+            <div class="c-projects__item-wrapper">
+              <img src="./img/thumbnails/kotk_small.png" srcset="./img/thumbnails/kotk_small.png 1x,
+    ./img/thumbnails/kotk_large.png 2x" alt="Image of project Kom Op Tegen Kanker" class="c-projects__thumbnail">
+              <a href="kom-op-tegen-kanker.html" class="c-projects__overlay">
+                <h3 class="c-projects__overlay-title">Kom op tegen kanker</h3>
+                <p class="c-projects__overlay-tags">Development - Design</p>
+              </a>
+            </div>
+          </div>
+          <div class="c-projects__item">
+            <div class="c-projects__item-wrapper">
+              <img src="./img/thumbnails/recordbreak_small.png" srcset="./img/thumbnails/recordbreak_small.png 1x,
+    ./img/thumbnails/recordbreak_large.png 2x" alt="Image of project Record Break" class="c-projects__thumbnail">
+              <a href="record-break.html" class="c-projects__overlay">
+                <h3 class="c-projects__overlay-title">Record Break</h3>
+                <p class="c-projects__overlay-tags">Design - Animation</p>
+              </a>
+            </div>
+          </div>
+          <div class="c-projects__item">
+            <div class="c-projects__item-wrapper">
+              <img src="./img/thumbnails/aquapure_small.png" srcset="./img/thumbnails/aquapure_small.png 1x,
+    ./img/thumbnails/aquapure_large.png 2x" alt="Image of project Aquapure" class="c-projects__thumbnail">
+              <a href="aquapure.html" class="c-projects__overlay">
+                <h3 class="c-projects__overlay-title">Aquapure</h3>
+                <p class="c-projects__overlay-tags">Development - Vue.js</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="c-skills" id="skills">
+    <div class="container">
+      <h2 class="c-skills__title">Skills</h2>
+      <div class="row px-5 justify-content-center">
+
+        <div class="c-skills__wrapper">
+
+          <div class="c-skills__category">
+            <h3 class="c-skills__subtitle">Front-end</h3>
+            <ul class="c-skills__list">
+              <li class="c-skills__item">HTML / SCSS</li>
+              <li class="c-skills__item">JavaScript</li>
+              <li class="c-skills__item">Bootstrap</li>
+              <li class="c-skills__item">Vue.js</li>
+            </ul>
+          </div>
+
+          <div class="c-skills__category">
+            <h3 class="c-skills__subtitle">Back-end &amp; CMS</h3>
+            <ul class="c-skills__list">
+              <li class="c-skills__item">PHP</li>
+              <li class="c-skills__item">SQL</li>
+              <li class="c-skills__item">Craft CMS</li>
+              <li class="c-skills__item">WordPress Elementor</li>
+            </ul>
+          </div>
+
+          <div class="c-skills__category">
+            <h3 class="c-skills__subtitle">UX &amp; Design</h3>
+            <ul class="c-skills__list">
+              <li class="c-skills__item">Figma</li>
+              <li class="c-skills__item">User Research</li>
+              <li class="c-skills__item">Wireframing</li>
+              <li class="c-skills__item">Photoshop</li>
+              <li class="c-skills__item">Illustrator</li>
+            </ul>
+          </div>
+
+          <div class="c-skills__category">
+            <h3 class="c-skills__subtitle">Media &amp; Motion</h3>
+            <ul class="c-skills__list">
+              <li class="c-skills__item">Photography</li>
+              <li class="c-skills__item">Lightroom Classic</li>
+              <li class="c-skills__item">After Effects</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="c-footer" id="contact">
+    <div class="container">
+      <div class="row">
+        <ul class="c-footer__list">
+          <li class="c-footer__item">
+            <a href="https://www.linkedin.com/in/jasper-dejonghe-885a3a250" target="_blank" class="c-footer__link">
+              <i class="bi bi-linkedin c-footer__icon"></i>
+              <span>Jasper Dejonghe</span>
+            </a>
+          </li>
+          <li class="c-footer__item">
+            <a href="mailto:jasper1.dejonghe@gmail.com" class="c-footer__link">
+              <i class="bi bi-envelope-fill c-footer__icon"></i>
+              <span>jasper1.dejonghe@gmail.com</span>
+            </a>
+          </li>
+          <li class="c-footer__item">
+            <a href="tel:+32471770073" class="c-footer__link">
+              <i class="bi bi-telephone-fill c-footer__icon"></i>
+              <span>+32 471 77 00 73</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </section>
+
+</body>
+
+</html>

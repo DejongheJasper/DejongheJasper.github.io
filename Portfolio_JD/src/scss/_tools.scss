@@ -1,0 +1,28 @@
+@mixin grid-borders($cols, $rows) {
+  // Reset all borders first
+  border: none;
+  
+  // Reset all possible nth-child border rules
+  &:nth-child(n) {
+    border-right: none;
+    border-bottom: none;
+  }
+
+  // All items get top + left borders
+  border-top: 1.5px solid $color-dark;
+  border-left: 1.5px solid $color-dark;
+
+  // Right border for items in the last column
+  &:nth-child(#{$cols}n) {
+    border-right: 1.5px solid $color-dark;
+  }
+
+  // Bottom border for items in the last row
+  $last-row-start: ($rows - 1) * $cols + 1;
+  
+  @for $i from $last-row-start through $cols * $rows {
+    &:nth-child(#{$i}) {
+      border-bottom: 1.5px solid $color-dark;
+    }
+  }
+}

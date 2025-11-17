@@ -1,0 +1,84 @@
+.c-projects {
+  scroll-margin-top: 8rem;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+  }
+  &__item {
+    padding: 1rem;
+
+    @include grid-borders(3, 2);
+  }
+
+  &__item-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 15.625rem;
+
+    &:hover .c-projects__overlay {
+      opacity: 1;
+    }
+  }
+
+  &__thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: $color-dark;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__overlay-title {
+    color: $color-light;
+    margin: 0;
+    font-family: $font-title;
+    font-size: 2.5rem;
+    font-variant: all-small-caps;
+    text-align: center;
+  }
+
+  &__overlay-tags {
+    color: $color-light;
+    font-family: $font-body;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  @include media-breakpoint-only('md') {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+    &__item {
+      @include grid-borders(2, 3);
+    }
+  }
+
+  @include media-breakpoint-down('md') {
+    &__grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+    }
+    &__item {
+      @include grid-borders(1, 6);
+    }
+  }
+}
